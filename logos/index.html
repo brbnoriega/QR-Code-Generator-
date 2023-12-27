@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <form action="#">
+                <div class="text">
+                    <label for="text">
+                        <i class="fa-solid fa-keyboard"></i>
+                        Enter your text or URL</label>
+                    <input type="text" id="text" placeholder=" ...your text or URL">
+                </div>
+                <div class="color">
+                    <label for="">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        color
+                    </label>
+                    <div class="colors-wrapper">
+                        <div class="foreground">
+                            <h5 class="heading">foreground</h5>
+                            <div class="custom-picker">
+                                <span></span>
+                                <input type="text" value="#5a4ca1" disabled>
+                                <input type="color" class="color-picker" id="fg-color" value="#5a4ca1">
+                            </div>
+                        </div>
+
+                        <div class="background">
+                            <h5 class="heading">background</h5>
+                            <div class="custom-picker">
+                                <span></span>
+                                <input type="text" value="#ffffff" disabled>
+                                <input type="color" class="color-picker" id="bg-color" value="#ffffff">
+                            </div>
+                        </div>
+
+                        <div class="corner">
+                            <h5 class="heading">corner</h5>
+                            <div class="custom-picker">
+                                <span></span>
+                                <input type="text" value="#000000" disabled>
+                                <input type="color" class="color-picker" id="corner-color" value="#000000">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
