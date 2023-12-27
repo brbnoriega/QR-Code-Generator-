@@ -23,40 +23,104 @@
                         Enter your text or URL</label>
                     <input type="text" id="text" placeholder=" ...your text or URL">
                 </div>
+                
                 <div class="color">
-                    <label for="">
-                        <i class="fa-solid fa-paintbrush"></i>
-                        color
+                    <label>
+                      <i class="fa-solid fa-paintbrush"></i>
+                      color
                     </label>
                     <div class="colors-wrapper">
-                        <div class="foreground">
-                            <h5 class="heading">foreground</h5>
-                            <div class="custom-picker">
-                                <span></span>
-                                <input type="text" value="#5a4ca1" disabled>
-                                <input type="color" class="color-picker" id="fg-color" value="#5a4ca1">
-                            </div>
+                      <div class="foreground">
+                        <span class="heading">foreground</span>
+                        <div class="custom-picker">
+                          <span></span>
+                          <input type="text" disabled value="#5a4ca1" />
+                          <input
+                            class="color-picker"
+                            type="color"
+                            id="fg-color"
+                            value="#5a4ca1"
+                          />
                         </div>
-
-                        <div class="background">
-                            <h5 class="heading">background</h5>
-                            <div class="custom-picker">
-                                <span></span>
-                                <input type="text" value="#ffffff" disabled>
-                                <input type="color" class="color-picker" id="bg-color" value="#ffffff">
-                            </div>
+                      </div>
+                      <div class="background">
+                        <span class="heading">background</span>
+                        <div class="custom-picker">
+                          <span></span>
+                          <input type="text" disabled value="#ffffff" />
+                          <input
+                            class="color-picker"
+                            type="color"
+                            id="bg-color"
+                            value="#ffffff"
+                          />
                         </div>
-
-                        <div class="corner">
-                            <h5 class="heading">corner</h5>
-                            <div class="custom-picker">
-                                <span></span>
-                                <input type="text" value="#000000" disabled>
-                                <input type="color" class="color-picker" id="corner-color" value="#000000">
-                            </div>
+                      </div>
+                      <div class="corner">
+                        <span class="heading">corner</span>
+                        <div class="custom-picker">
+                          <span></span>
+                          <input type="text" disabled value="#000000" />
+                          <input
+                            class="color-picker"
+                            type="color"
+                            id="corner-color"
+                            value="#000000"
+                          />
                         </div>
-
+                      </div>
                     </div>
+                  </div>
+                  <div class="type">
+                    <label>
+                      <i class="fa-solid fa-qrcode"></i>
+                      style
+                    </label>
+                    <div class="types-wrapper">
+                      <div class="dots">
+                        <span class="heading">dots</span>
+                        <div class="custom-dropdown">
+                          <span class="selected" id="dots-style">square</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                          <div class="options">
+                            <span class="option">dots</span>
+                            <span class="option active">square</span>
+                            <span class="option">rounded</span>
+                            <span class="option">extra-rounded</span>
+                            <span class="option">classy</span>
+                            <span class="option">classy-rounded</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="corner-squares">
+                        <span class="heading">corners squares</span>
+                        <div class="custom-dropdown">
+                          <span class="selected" id="corner-squares-style"
+                            >square</span
+                          >
+                          <i class="fa-solid fa-chevron-down"></i>
+                          <div class="options">
+                            <span class="option">dots</span>
+                            <span class="option active">square</span>
+                            <span class="option">extra-rounded</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="corner-dots">
+                        <span class="heading">corners dots</span>
+                        <div class="custom-dropdown">
+                          <span class="selected" id="corner-dots-style">square</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                          <div class="options">
+                            <span class="option">dots</span>
+                            <span class="option active">square</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                        
                 </div>
             </form>
         </div>
